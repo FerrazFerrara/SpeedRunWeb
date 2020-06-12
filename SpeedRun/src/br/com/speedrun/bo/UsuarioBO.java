@@ -18,8 +18,9 @@ public class UsuarioBO {
 		this.usuarioDAO.inserirUsuario(Usuario);
 	}
 
-	public void getUsuarioDAO() {
+	public ArrayList<UsuarioBean> getUsuarioDAO() {
 		this.usuariosInDataBase = usuarioDAO.buscaUsuarios();
+		return this.usuariosInDataBase;
 	}
 
 	public void setUsuarioDAO(UsuarioDAO usuarioDAO) {

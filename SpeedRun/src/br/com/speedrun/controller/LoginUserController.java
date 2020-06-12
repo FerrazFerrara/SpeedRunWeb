@@ -8,12 +8,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.com.speedrun.beans.UsuarioBean;
+import br.com.speedrun.bo.UsuarioBO;
+
 /**
  * Servlet implementation class LoginUserController
  */
 @WebServlet("/LoginUserController")
 public class LoginUserController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	UsuarioBO usuarioBO = new UsuarioBO();
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -36,7 +40,17 @@ public class LoginUserController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+
+		for(UsuarioBean usuario: usuarioBO.getUsuarioDAO()) {
+			if ((usuario.getLogin().equals(username)) && (usuario.getSenha().equals(password))) {			
+				request.setAttribute("warning", "Logged with success");
+				request.getRequestDispatcher("RankingView.jsp").forward(request, response);
+			} 		
+		}
+		
+		request.setAttribute("warning", "Error with Login");
 	}
 
 }

@@ -459,6 +459,12 @@ input {
   display: table-cell;
 }
 
+.card-3 .card-heading2 {
+  background: url("../images/firekeeper.jpg") top left/cover no-repeat;
+  display: table-cell;
+  width: 50%;
+}
+
 @media (max-width: 767px) {
   .card-3 {
     display: block;
@@ -476,3 +482,6 @@ input {
     padding-bottom: 45px;
   }
 }
+
+
+

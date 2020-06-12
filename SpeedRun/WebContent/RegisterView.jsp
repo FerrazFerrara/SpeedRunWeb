@@ -27,11 +27,11 @@
 	</div>
 	<nav id="nav">
 	<ul class="main">
-		<li><a target="_blank" href="">Home</a></li>
-		<li><a target="_blank" href="RankingView.jsp">Ranking</a></li>
+		<li><a target="_self" href="">Home</a></li>
+		<li><a target="_self" href="RankingView.jsp">Ranking</a></li>
 		<li><a target="_blank" href="">Support</a></li>
-		<li><a target="_blank" href="RegisterView.jsp">Register</a></li>
-		<li><a target="_blank" href="LoginView.jsp">Login</a></li>
+		<li><a target="_self" href="RegisterView.jsp">Register</a></li>
+		<li><a target="_self" href="LoginView.jsp">Login</a></li>
 	</ul>
 	</nav>
 	<div class="overlay"></div>
@@ -50,19 +50,19 @@
 			<div class="card-heading"></div>
 			<div class="card-body">
 				<h2 class="title">Registration Info</h2>
-				<form method="POST" action="Register">
+				<form method="POST" action="RegisterViewController">
 					<div class="input-group">
-						<input class="input--style-3" type="text" placeholder="Username"
+						<input class="input--style-3" type="text" required="required" placeholder="Username"
 							name="name">
 					</div>
 
 					<div class="input-group">
-						<input class="input--style-3" type="email" placeholder="Password"
+						<input class="input--style-3" type="password" required="required" placeholder="Password"
 							name="email">
 					</div>
 					<div class="input-group">
-						<input class="input--style-3" type="text"
-							placeholder="Confirm Password" name="phone">
+						<input class="input--style-3" type="password"
+							required="required" placeholder="Confirm Password">
 					</div>
 					<div class="p-t-10">
 						<button class="btn btn--pill btn--green" type="submit">Register</button>
