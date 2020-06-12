@@ -13,7 +13,7 @@ public class SpeedRunDAO {
 	private PreparedStatement prep;
 	private Statement st;
 	private ResultSet rs;
-	
+	ConnectorDAO c = new ConnectorDAO();
 	private ArrayList<SpeedRunBean> speedruns = new ArrayList<SpeedRunBean>();
 	
 	public SpeedRunDAO() {
