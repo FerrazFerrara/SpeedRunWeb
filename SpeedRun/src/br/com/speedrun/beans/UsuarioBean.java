@@ -32,6 +32,11 @@ public class UsuarioBean {
 		this.setYoutube(youtube);
 		this.setInstagram(instagram);
 	}
+	
+	public UsuarioBean(String login, String senha) {		
+		this.setLogin(login);
+		this.setSenha(senha);		
+	}
 
 	// ============================== GETTERS AND SETTERS ==============================
 	public int getIdUser() {
