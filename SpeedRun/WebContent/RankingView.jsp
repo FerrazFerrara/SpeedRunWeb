@@ -18,11 +18,11 @@
 <div class="menu"> <span></span> </div>
 <nav id="nav">
 		<ul class="main">
-				<li><a target="_blank" href="">Home</a></li>
-				<li><a target="_blank" href="RankingView.jsp">Ranking</a></li>
-				<li><a target="_blank" href="">Support</a></li>
-				<li><a target="_blank" href="RegisterView.jsp">Register</a></li>
-				<li><a target="_blank" href="LoginView.jsp">Login</a></li>
+		<li><a target="_self" href="">Home</a></li>
+		<li><a target="_self" href="RankingView.jsp">Ranking</a></li>
+		<li><a target="_blank" href="SupportView.jsp">Support</a></li>
+		<li><a target="_self" href="RegisterView.jsp">Register</a></li>
+		<li><a target="_self" href="LoginView.jsp">Login</a></li>
 		</ul>
 </nav>
 <div class="overlay"></div>

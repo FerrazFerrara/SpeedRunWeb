@@ -447,7 +447,7 @@ input {
   display: table;
 }
 
-.card-3 .card-heading {
+.card-3 .card-heading3 {
   background: url("../images/bg-heading-03.jpg") top left/cover no-repeat;
   display: table-cell;
   width: 50%;
@@ -455,14 +455,21 @@ input {
 
 .card-3 .card-body {
   padding: 57px 65px;
-  padding-bottom: 65px;
+  padding-bottom: 65px;  
   display: table-cell;
 }
 
 .card-3 .card-heading2 {
-  background: url("../images/firekeeper.jpg") top left/cover no-repeat;
+  background: url("../images/firekeeper.jpg") center/cover no-repeat;
   display: table-cell;
   width: 50%;
+}
+
+.card-3 .card-heading {
+  background: url("../images/bonfire.jpg") center/cover no-repeat ;
+  display: table-cell;
+  width: 50%;
+
 }
 
 @media (max-width: 767px) {
