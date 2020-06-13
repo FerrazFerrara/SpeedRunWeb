@@ -42,7 +42,7 @@
 			<div class="well profile">
 				<div class="col-sm-12">
 					<div class="col-xs-12 col-sm-8">
-						<h2 style="color:rgb(255,255,255)">Username</h2>
+						<input type="text" placeholder="username" maxlength="8" size="8">
 						<p>
 							<strong style="color:rgb(255,255,255)">About: </strong>
 							<em style="color:rgb(255,255,255)">Brazilian master</em>
