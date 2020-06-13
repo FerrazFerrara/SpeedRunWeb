@@ -59,4 +59,35 @@ public class UsuarioDAO {
 			throw new RuntimeException("erro ao buscar usuarios do banco");
 		}
 	}
+	
+	public boolean updateCarroAll(UsuarioBean usuario, int id) {
+		String instagram = "instagram = \"" + usuario.getInstagram() + "\"";
+		String twitter = ", twitter = \"" + usuario.getTwitter() + "\"";
+		String youtube = ", youtube = \"" + usuario.getYoutube() + "\"";
+		String sql = "UPDATE carros SET " + youtube + twitter + instagram + " where id_carro = " + id;
+		
+		try {
+			prep = conn.prepareStatement(sql);
+			prep.execute();
+			prep.close();
+			return true;
+		} catch (Exception e) {
+			System.out.println("Erro ao dar update no usuario: " + e);
+			return false;
+		}
+	}
+	
+	public boolean deleteUsuario(UsuarioBean usuario) {
+		String sql = "DELETE FROM usuario WHERE id_carro = " + usuario.getIdUser();
+		
+		try {
+			prep = conn.prepareStatement(sql);
+			prep.execute();
+			prep.close();
+			return true;
+		} catch (Exception error) {
+			System.out.println("erro ao deletar usuario por conta de: " + error);
+			return false;
+		}
+	}
 }
