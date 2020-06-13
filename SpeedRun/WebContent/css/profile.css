@@ -8,7 +8,7 @@ body {
 input {
 	color: #FFFFFF;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 20px;
 	background-color: #000000;
 }
 
@@ -58,4 +58,15 @@ span.tags {
 	font-weight: bold;
 	font-size: 20;
 	padding: 2px 4px;
+}
+
+.btn--green {
+	margin-top: 20px;
+	background: #632C0B;
+	font-size: 50px;
+}
+
+.btn--green:hover {
+	background: #632C0B;
+	font-size: 50px;
 }

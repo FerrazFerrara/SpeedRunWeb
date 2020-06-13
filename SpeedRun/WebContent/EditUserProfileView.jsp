@@ -42,10 +42,10 @@
 			<div class="well profile">
 				<div class="col-sm-12">
 					<div class="col-xs-12 col-sm-8">
-						<input type="text" placeholder="username" maxlength="8" size="8">
+						<input type="text" placeholder="username" size="10" maxlength="8">
 						<p>
 							<strong style="color:rgb(255,255,255)">About: </strong>
-							<em style="color:rgb(255,255,255)">Brazilian master</em>
+							<input type="text" placeholder="I am Jack " size="10" maxlength="8">
 						</p>
 						<p>
 							<strong style="color:rgb(255,255,255)">Speedruns: </strong> <span class="tags " style="color:rgb(255,255,255)">All Bosses</span>
@@ -73,7 +73,7 @@
 				<div class="col-xs-12 divider text-center">
 					<div class="col-xs-12 col-sm-4 emphasis">
 						<h2>
-							<strong style="color:rgb(255,255,255)"> @insta</strong>
+							<input type="text" placeholder="@insta" size="5" maxlength="8">
 						</h2>
 						<p>
 							<small style="color:rgb(255,255,255)">Instagram</small>
@@ -84,7 +84,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-4 emphasis">
 						<h2>
-							<strong style="color:rgb(255,255,255)">@twit</strong>
+							<input type="text" placeholder="@twit" size="5" maxlength="8">
 						</h2>
 						<p>
 							<small style="color:rgb(255,255,255)">Twitter</small>
@@ -95,7 +95,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-4 emphasis">
 						<h2>
-							<strong style="color:rgb(255,255,255)">faceb</strong>
+							<input type="text" placeholder="@face" size="5" maxlength="8">
 						</h2>
 						<p>
 							<small style="color:rgb(255,255,255)">Facebook</small>
@@ -103,6 +103,12 @@
 						<button type="button" class="btn btn-primary" style="color:rgb(255,255,255)">
 							<span class="fa fa-user"></span> View Profile
 						</button>
+						
+						
+					</div>
+						<div class="p-t-10">
+						<br>
+						<button class="btn btn--pill btn--green" style="color:rgb(255,255,255)" type="submit">Login</button>
 					</div>
 				</div>
 			</div>
