@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-import br.com.speedrun.beans.UsuarioBean;
+import br.com.speedrun2.beans.UsuarioBean;
 
 public class UsuarioDAO {
 	private Connection conn;

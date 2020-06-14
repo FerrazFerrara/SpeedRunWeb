@@ -1,6 +1,6 @@
-package br.com.speedrun.bo;
+package br.com.speedrun3.bo;
 
-import br.com.speedrun.beans.UsuarioBean;
+import br.com.speedrun2.beans.UsuarioBean;
 
 public class ActualUserBO {
 	private static UsuarioBean shared;

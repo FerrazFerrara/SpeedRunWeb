@@ -1,9 +1,9 @@
-package br.com.speedrun.bo;
+package br.com.speedrun3.bo;
 
 import java.util.ArrayList;
 
-import br.com.speedrun.beans.UsuarioBean;
 import br.com.speedrun.dao.UsuarioDAO;
+import br.com.speedrun2.beans.UsuarioBean;
 
 
 public class UsuarioBO {
