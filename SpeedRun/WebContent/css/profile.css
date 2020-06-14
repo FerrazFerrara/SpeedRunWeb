@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+	font-family: 'EB Garamond', serif;
+	background: #000000;
+}
+
+input {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #000000;
+}
+
+.profile {
+	min-height: 355px;
+	display: inline-block;
+	font-family: 'EB Garamond', serif;
+	font-size: 25px;
+	background: #000000;
+	border-color: #000000;
+}
+
+figcaption.ratings {
+	margin-top: 20px;
+}
+
+figcaption.ratings a {
+	color: #f1c40f;
+	font-size: 11px;
+}
+
+figcaption.ratings a:hover {
+	color: #f39c12;
+	text-decoration: none;
+}
+
+.divider {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.emphasis {
+	border-top: 4px solid transparent;
+}
+
+.emphasis:hover {
+	border-top: 4px solid #1abc9c;
+}
+
+.emphasis h2 {
+	margin-bottom: 0;
+}
+
+span.tags {
+	background: #632C0B;
+	border-radius: 30px;
+	color: #632C0B;
+	font-weight: bold;
+	font-size: 20;
+	padding: 2px 4px;
+}
+
+.btn--green {
+	margin-top: 20px;
+	background: #632C0B;
+	font-size: 50px;
+}
+
+.btn--green:hover {
+	background: #632C0B;
+	font-size: 50px;
+}

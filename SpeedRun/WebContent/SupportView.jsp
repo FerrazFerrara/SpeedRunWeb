@@ -52,13 +52,12 @@
 			<div class="card-heading2"></div>
 			<div class="card-body">
 				<h2 class="title">Support</h2>
-				<form method="POST" action="mailto:gmdalosto@gmail.com"
+				<form method="POST" action="https://formspree.io/gmdalosto@gmail.com"
 					enctype="text/plain">
 					<div class="input-group">
 						<input class="input--style-3" type="email" required="required"
 							placeholder="Email" name="name">
 					</div>
-
 					<div class="input-group">
 						<input class="input--style-3" type="text" required="required"
 							placeholder="Comment" name="email">
