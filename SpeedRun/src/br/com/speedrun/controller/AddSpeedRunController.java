@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.speedrun.beans.SpeedRunBean;
+import br.com.speedrun.beans.UsuarioBean;
+import br.com.speedrun.bo.ActualUserBO;
 import br.com.speedrun.bo.SpeedRunBO;
 
 @WebServlet("/addSpeedRun")
@@ -23,20 +25,17 @@ public class AddSpeedRunController extends HttpServlet{
 		String dia = req.getParameter("dia");
 		String tempo = req.getParameter("tempo");
 		
-		/**
-		 * FAZER SINGLETON COM O USUARIO LOGADO ATUALMENTE E FAZER LOGICA PARA NAO SALVAR COM NENHUM USER LOGADO!!!
-		 * */
-//		if(usuarioAtual != null) {
-//			SpeedRunBean speedrun = new SpeedRunBean(usuarioAtual.getIdUser, tempo, modoJogo, plataforma, dia);
-			SpeedRunBean speedrun = new SpeedRunBean(0, tempo, modoJogo, plataforma, dia);
+		UsuarioBean usuarioAtual = ActualUserBO.getActualUser();
+		if(usuarioAtual != null) {
+			SpeedRunBean speedrun = new SpeedRunBean(usuarioAtual.getIdUser(), tempo, modoJogo, plataforma, dia);
 			if(new SpeedRunBO().addSpeedRun(speedrun)) {
 				resp.sendRedirect("");
 			} else {
 				resp.sendError(0, "Erro ao Adicionar SpeedRun :c, Tente novamente");
 			}
-//		} else {
-//			resp.sendRedirect("LoginView.jsp");
-//		}
+		} else {
+			resp.sendRedirect("LoginView.jsp");
+		}
 		
 	}
 }

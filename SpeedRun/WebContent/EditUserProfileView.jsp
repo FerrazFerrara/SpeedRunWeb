@@ -40,12 +40,13 @@
 	<div class="row">
 		<div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
 			<div class="well profile">
+			<form action="editProfileController" method="post">
 				<div class="col-sm-12">
 					<div class="col-xs-12 col-sm-8">
-						<input type="text" placeholder="username" size="10" maxlength="8">
+						<input type="text" placeholder="username" size="10" maxlength="8" name="username">
 						<p>
 							<strong style="color:rgb(255,255,255)">About: </strong>
-							<input type="text" placeholder="I am Jack " size="10" maxlength="8">
+							<input type="text" placeholder="I am Jack " size="10" maxlength="8" name="about">
 						</p>
 						<p>
 							<strong style="color:rgb(255,255,255)">Speedruns: </strong> <span class="tags " style="color:rgb(255,255,255)">All Bosses</span>
@@ -73,7 +74,7 @@
 				<div class="col-xs-12 divider text-center">
 					<div class="col-xs-12 col-sm-4 emphasis">
 						<h2>
-							<input type="text" placeholder="@insta" size="5" maxlength="8">
+							<input type="text" placeholder="@insta" size="5" maxlength="8" name="instagram">
 						</h2>
 						<p>
 							<small style="color:rgb(255,255,255)">Instagram</small>
@@ -84,7 +85,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-4 emphasis">
 						<h2>
-							<input type="text" placeholder="@twit" size="5" maxlength="8">
+							<input type="text" placeholder="@twit" size="5" maxlength="8" name="twitter">
 						</h2>
 						<p>
 							<small style="color:rgb(255,255,255)">Twitter</small>
@@ -95,7 +96,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-4 emphasis">
 						<h2>
-							<input type="text" placeholder="@face" size="5" maxlength="8">
+							<input type="text" placeholder="@face" size="5" maxlength="8" name="facebook">
 						</h2>
 						<p>
 							<small style="color:rgb(255,255,255)">Facebook</small>
@@ -111,6 +112,7 @@
 						<button class="btn btn--pill btn--green" style="color:rgb(255,255,255)" type="submit">Login</button>
 					</div>
 				</div>
+				</form>
 			</div>
 		</div>
 	</div>

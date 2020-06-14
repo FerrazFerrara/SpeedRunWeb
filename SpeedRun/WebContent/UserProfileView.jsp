@@ -78,7 +78,7 @@
 						<p>
 							<small style="color:rgb(255,255,255)">Instagram</small>
 						</p>
-						<button type="button" class="btn btn-primary" style="color:rgb(255,255,255)">
+						<button type="button" onClick="location.href = '${instagram}'" class="btn btn-primary" style="color:rgb(255,255,255)">
 							<span class="fa fa-user"></span> View Profile
 						</button>
 					</div>
@@ -89,7 +89,7 @@
 						<p>
 							<small style="color:rgb(255,255,255)">Twitter</small>
 						</p>
-						<button class="btn btn-info btn-block" style="color:rgb(255,255,255)">
+						<button onClick="location.href = '${twitter}'" class="btn btn-info btn-block" style="color:rgb(255,255,255)">
 							<span class="fa fa-user"></span> Follow
 						</button>
 					</div>
@@ -100,7 +100,7 @@
 						<p>
 							<small style="color:rgb(255,255,255)">Facebook</small>
 						</p>
-						<button type="button" class="btn btn-primary" style="color:rgb(255,255,255)">
+						<button type="button" onClick="location.href = '${facebook}'" class="btn btn-primary" style="color:rgb(255,255,255)">
 							<span class="fa fa-user"></span> View Profile
 						</button>
 					</div>

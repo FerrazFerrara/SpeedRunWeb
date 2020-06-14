@@ -26,4 +26,14 @@ public class UsuarioBO {
 	public void setUsuarioDAO(UsuarioDAO usuarioDAO) {
 		this.usuarioDAO = usuarioDAO;
 	}
+	
+	public void attProfile(String about, String username, String twitter, String facebook, String instagram) {
+		UsuarioBean usuario = ActualUserBO.getActualUser();
+		usuario.setTwitter(twitter);
+		usuario.setInstagram(instagram);
+		usuario.setYoutube(facebook);
+		usuario.setPais(about);
+		usuario.setLogin(username);
+		usuarioDAO.updateUsuario(usuario, usuario.getIdUser());
+	}
 }

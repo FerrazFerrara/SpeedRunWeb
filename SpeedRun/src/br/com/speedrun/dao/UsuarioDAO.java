@@ -60,7 +60,7 @@ public class UsuarioDAO {
 		}
 	}
 	
-	public boolean updateCarroAll(UsuarioBean usuario, int id) {
+	public boolean updateUsuario(UsuarioBean usuario, int id) {
 		String instagram = "instagram = \"" + usuario.getInstagram() + "\"";
 		String twitter = ", twitter = \"" + usuario.getTwitter() + "\"";
 		String youtube = ", youtube = \"" + usuario.getYoutube() + "\"";
