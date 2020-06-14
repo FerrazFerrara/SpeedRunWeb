@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.com.speedrun.apiservices.ServerCommunication;
 import br.com.speedrun.beans.UsuarioBean;
 import br.com.speedrun.bo.UsuarioBO;
 
@@ -18,6 +19,7 @@ import br.com.speedrun.bo.UsuarioBO;
 public class LoginUserController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	UsuarioBO usuarioBO = new UsuarioBO();
+	ServerCommunication contactSV = new ServerCommunication();
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -40,9 +42,13 @@ public class LoginUserController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String username = request.getParameter("username");
+		String username = request.getParameter("name");
 		String password = request.getParameter("password");
-
+		
+		System.out.println(username);
+		System.out.println(password);
+			contactSV.sendGET();
+		
 		for(UsuarioBean usuario: usuarioBO.getUsuarioDAO()) {
 			if ((usuario.getLogin().equals(username)) && (usuario.getSenha().equals(password))) {			
 				request.setAttribute("warning", "Logged with success");
@@ -50,7 +56,7 @@ public class LoginUserController extends HttpServlet {
 			} 		
 		}
 		
-		request.setAttribute("warning", "Error with Login");
+		request.getRequestDispatcher("LoginUserController").forward(request, response);
 	}
 
 }

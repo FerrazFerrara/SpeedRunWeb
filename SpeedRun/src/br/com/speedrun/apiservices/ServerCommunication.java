@@ -10,13 +10,13 @@ public class ServerCommunication {
 
 	private static final String USER_AGENT = "Mozilla/5.0";
 
-	private static final String GET_URL = "https://localhost:9090/SpringMVCExample";
+	private static final String GET_URL = "http://speedsouls.herokuapp.com/usuario";
 
 	private static final String POST_URL = "https://localhost:9090/SpringMVCExample/home";
 
 	private static final String POST_PARAMS = "userName=Pankaj";
 
-	private static void sendGET() throws IOException {
+	 public void sendGET() throws IOException {
 		URL obj = new URL(GET_URL);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 		con.setRequestMethod("GET");
@@ -42,7 +42,7 @@ public class ServerCommunication {
 
 	}
 
-	private static void sendPOST() throws IOException {
+	 public void sendPOST() throws IOException {
 		URL obj = new URL(POST_URL);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 		con.setRequestMethod("POST");
