@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -55,11 +55,12 @@
 					<div class="input-group">
 						<input class="input--style-3" type="text" required="required"
 							placeholder="Username" name="name">
+							
 					</div>
 
 					<div class="input-group">
 						<input class="input--style-3" type="password" required="required"
-							placeholder="Password" name="email">
+							placeholder="Password" name="password">
 					</div>
 					<div class="p-t-10">
 						<button class="btn btn--pill btn--green" type="submit">Login</button>
