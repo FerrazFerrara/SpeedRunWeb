@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-import br.com.speedrun.beans.SpeedRunBean;
+import br.com.speedrun2.beans.SpeedRunBean;
 
 public class SpeedRunDAO {
 	private Connection conn;

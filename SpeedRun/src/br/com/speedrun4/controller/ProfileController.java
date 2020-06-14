@@ -1,4 +1,4 @@
-package br.com.speedrun.controller;
+package br.com.speedrun4.controller;
 
 import java.io.IOException;
 

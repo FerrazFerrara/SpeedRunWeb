@@ -1,10 +1,10 @@
-package br.com.speedrun.bo;
+package br.com.speedrun3.bo;
 
 import java.util.ArrayList;
 
-import br.com.speedrun.beans.SpeedRunBean;
-import br.com.speedrun.beans.UsuarioBean;
 import br.com.speedrun.dao.SpeedRunDAO;
+import br.com.speedrun2.beans.SpeedRunBean;
+import br.com.speedrun2.beans.UsuarioBean;
 
 public class SpeedRunBO {
 	public ArrayList<SpeedRunBean> speedRunInDataBase = new ArrayList<SpeedRunBean>();

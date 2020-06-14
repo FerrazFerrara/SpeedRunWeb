@@ -1,4 +1,4 @@
-package br.com.speedrun.apiservices;
+package br.com.speedrun1.apiservices;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

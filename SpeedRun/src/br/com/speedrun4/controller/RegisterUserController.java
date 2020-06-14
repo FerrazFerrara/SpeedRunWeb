@@ -1,4 +1,4 @@
-package br.com.speedrun.controller;
+package br.com.speedrun4.controller;
 
 
 import java.io.IOException;
@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.speedrun.beans.UsuarioBean;
-import br.com.speedrun.bo.UsuarioBO;
+import br.com.speedrun2.beans.UsuarioBean;
+import br.com.speedrun3.bo.UsuarioBO;
 
 /**
  * Servlet implementation class RegisterUserController

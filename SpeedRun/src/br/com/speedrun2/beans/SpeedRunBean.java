@@ -1,4 +1,4 @@
-package br.com.speedrun.beans;
+package br.com.speedrun2.beans;
 
 import br.com.speedrun.dao.SpeedRunDAO;
 
