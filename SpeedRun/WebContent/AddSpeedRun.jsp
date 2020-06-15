@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -43,7 +43,6 @@ $('.menu, .overlay').click(function () {
 				<h2 class="title">Add SpeedRun</h2>
 				<form action="addSpeedRun" method="post">
 					Modo de jogo<br>
-					<input type="radio" id="cheats" name="modoJogo" value="cheats" required>
 					<input type="radio" id="cheats" name="modoJogo" value="cheats" required="required">
 					<label for="cheats">Cheats</label><br>
 					<input type="radio" id="noCheats" name="modoJogo" value="noCheats">

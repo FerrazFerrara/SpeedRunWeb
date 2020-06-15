@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 //import br.com.speedrun.apiservices.ServerCommunication;
-import br.com.speedrun.beans.UsuarioBean;
-import br.com.speedrun.bo.ActualUserBO;
-import br.com.speedrun.bo.UsuarioBO;
+//import br.com.speedrun.beans.UsuarioBean;
+//import br.com.speedrun.bo.ActualUserBO;
+//import br.com.speedrun.bo.UsuarioBO;
 
 /**
  * Servlet implementation class LoginUserController

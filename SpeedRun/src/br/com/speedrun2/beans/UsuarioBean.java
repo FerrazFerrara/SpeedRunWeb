@@ -37,6 +37,10 @@ public class UsuarioBean {
 		this.setLogin(login);
 		this.setSenha(senha);		
 	}
+	
+	public UsuarioBean() {
+		
+	}
 
 	// ============================== GETTERS AND SETTERS ==============================
 	public int getIdUser() {
