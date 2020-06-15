@@ -42,10 +42,10 @@
 			<div class="well profile">
 				<div class="col-sm-12">
 					<div class="col-xs-12 col-sm-8">
-						<h2 style="color:rgb(255,255,255)"> ${username} </h2>
+						<h2 style="color:rgb(255,255,255)">Username</h2>
 						<p>
 							<strong style="color:rgb(255,255,255)">About: </strong>
-							<em style="color:rgb(255,255,255)">${pais}</em>
+							<em style="color:rgb(255,255,255)">Brazilian master</em>
 						</p>
 						<p>
 							<strong style="color:rgb(255,255,255)">Speedruns: </strong> <span class="tags " style="color:rgb(255,255,255)">All Bosses</span>
@@ -105,11 +105,6 @@
 						</button>
 					</div>
 				</div>
-				<div class="col-xs-12 divider text-center">
-				<form method="get" action="ProfileController">
-					<br><input type="submit" value="Carregar dados Usuario">
-				</form>
-			</div>
 			</div>
 		</div>
 	</div>

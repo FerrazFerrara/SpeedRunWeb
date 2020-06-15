@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -36,24 +35,7 @@ $('.menu, .overlay').click(function () {
 	
 });
 </script>
-	<div>
-		<form action="speedRunsController" method="get">
-			<br><input type="submit" value="Buscar SpeedRuns"><br><br><br>
-		</form>
-	</div>
-	
-	<div>
-		<form action="speedRunsController" method="post">
-			<c:forEach items = "${speedRuns}" var="speedrun">
-				<div>
-					<p>Tempo: ${speedrun.tempo}</p>
-					<p>Data: ${speedrun.dia}</p>
-					<p>Modo de Jogo: ${speedrun.modoJogo}</p>
-					<p>Plataforma: ${speedrun.plataforma}</p>
-					<input type="submit" value="Ver Perfil :${speedrun.idUser}" name="btnVerPerfil"><br><br>
-				</div><br><br>
-			</c:forEach>
-		</form>
-	</div>
+
+
 </body>
 </html>
