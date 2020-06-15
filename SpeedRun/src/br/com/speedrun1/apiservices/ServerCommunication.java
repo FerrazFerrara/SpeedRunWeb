@@ -16,8 +16,8 @@ public class ServerCommunication {
 
 	private static final String POST_PARAMS = "userName=Pankaj";
 
-	 public void sendGET() throws IOException {
-		URL obj = new URL(GET_URL);
+	 public boolean sendGET(String username,String password) throws IOException {
+		URL obj = new URL(GET_URL + "/" + username + "/" + password);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 		con.setRequestMethod("GET");
 		con.setRequestProperty("User-Agent", USER_AGENT);
@@ -28,7 +28,7 @@ public class ServerCommunication {
 					con.getInputStream()));
 			String inputLine;
 			StringBuffer response = new StringBuffer();
-
+			
 			while ((inputLine = in.readLine()) != null) {
 				response.append(inputLine);
 			}
@@ -36,8 +36,13 @@ public class ServerCommunication {
 
 			// print result
 			System.out.println(response.toString());
+			if (response.toString().equals("[]")) {
+				return false;
+			}
+			return true;
 		} else {
 			System.out.println("GET request not worked");
+			return false;
 		}
 
 	}

@@ -21,5 +21,6 @@
 	<classpathentry exported="true" kind="lib" path="C:/Users/Gui/Documents/Jar Files/javax.servlet-api-3.1.0 (1).jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/CDC-1.0%Foundation-1.0"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_151"/>
+	<classpathentry kind="lib" path="C:/Users/Gui/Documents/Jar Files/mysql-connector-java-5.1.49.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
