@@ -19,19 +19,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="C:/Users/Gui/Documents/Jar Files/javax.servlet-api-3.1.0 (1).jar"/>
-<<<<<<< HEAD
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/CDC-1.0%Foundation-1.0"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_151"/>
 	<classpathentry kind="lib" path="C:/Users/Gui/Documents/Jar Files/mysql-connector-java-5.1.49.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Gui/Documents/Jar Files/json-simple-1.1.jar"/>
-=======
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/CDC-1.0%Foundation-1.0">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_151"/>
-	<classpathentry exported="true" kind="lib" path="/Users/ferraz/Desktop/Java Stuff/mysql-connector-java-5.1.48-bin.jar"/>
->>>>>>> aee46e306ec8439e7f8d5e4fafb9af26fad6d07f
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
