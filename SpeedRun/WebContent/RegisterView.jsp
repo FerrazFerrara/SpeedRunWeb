@@ -50,7 +50,7 @@
 			<div class="card-heading"></div>
 			<div class="card-body">
 				<h2 class="title">Registration Info</h2>
-				<form method="POST" action="RegisterViewController">
+				<form method="POST" action="RegisterUserController">
 					<div class="input-group">
 						<input class="input--style-3" type="text" required="required" placeholder="Username"
 							name="name">

@@ -49,7 +49,7 @@ public class LoginUserController extends HttpServlet {
 		String username = request.getParameter("name");
 		String password = request.getParameter("password");
 
-		if (contactSV.sendGET(username, password)) {
+		if (contactSV.sendLoginGetter(username, password)) {
 			request.getRequestDispatcher("SpeedRunsView.jsp").forward(request, response);
 		} else {
 			PrintWriter pw=response.getWriter();
