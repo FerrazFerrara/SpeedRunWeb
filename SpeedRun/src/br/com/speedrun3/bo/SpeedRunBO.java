@@ -25,6 +25,10 @@ public class SpeedRunBO {
 		this.speedRunInDataBase = speedRunDAO.buscaSpeedruns();
 		return this.speedRunInDataBase;
 	}
+	
+	public ArrayList<SpeedRunBean> getSpeedRunDAO(int id){
+		return speedRunDAO.buscaSpeedruns(id);
+	}
 
 	public void setSpeedRunDAO(SpeedRunDAO speedRunDAO) {
 		this.speedRunDAO = speedRunDAO;

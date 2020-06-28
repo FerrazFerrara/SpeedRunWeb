@@ -63,6 +63,26 @@ public class SpeedRunDAO {
 		}
 	}
 	
+	public ArrayList<SpeedRunBean> buscaSpeedruns(int id) {
+		String sql = "SELECT * FROM speedruns where idUser = " + id;
+		
+		try {
+			st = conn.createStatement();
+			rs = st.executeQuery(sql);
+			
+			while(rs.next()) {
+				String tempo = rs.getDate("tempo").toString();
+				String dia = rs.getDate("dia").toString();
+				SpeedRunBean speedrun = new SpeedRunBean(rs.getInt("idSR"), rs.getInt("idUser"), tempo, rs.getString("modoJogo"), rs.getString("plataforma"), dia);
+				speedruns.add(speedrun);
+			}
+			
+			return speedruns;
+		}catch (Exception e) {
+			throw new RuntimeException("erro ao buscar speedruns do banco");
+		}
+	}
+	
 	public boolean updateSpeedRun(SpeedRunBean speedrun, int id) {
 		String tempo = "tempo = TO_DATE('" + speedrun.getTempo() + "', '%i:%s:%f')";
 		String modoJogo = ", modoJogo = \"" + speedrun.getModoJogo() + "\"";

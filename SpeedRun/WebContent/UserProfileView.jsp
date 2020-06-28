@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <link
 	href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
 	rel="stylesheet" id="bootstrap-css">
@@ -42,14 +45,16 @@
 			<div class="well profile">
 				<div class="col-sm-12">
 					<div class="col-xs-12 col-sm-8">
-						<h2 style="color:rgb(255,255,255)">Username</h2>
+						<h2 style="color:rgb(255,255,255)">${username}</h2>
 						<p>
 							<strong style="color:rgb(255,255,255)">About: </strong>
-							<em style="color:rgb(255,255,255)">Brazilian master</em>
+							<em style="color:rgb(255,255,255)">${nacionality}</em>
 						</p>
 						<p>
-							<strong style="color:rgb(255,255,255)">Speedruns: </strong> <span class="tags " style="color:rgb(255,255,255)">All Bosses</span>
-							<span class="tags" style="color:rgb(255,255,255)">Any%</span> <span class="tags" style="color:rgb(255,255,255)">Any%</span>
+							<strong style="color:rgb(255,255,255)">Speedruns: </strong> 
+							<c:forEach items = "${speedRuns}" var="speedrun">
+								<span class="tags " style="color:rgb(255,255,255)">${speedrun.modoJogo}</span>
+							</c:forEach>
 						</p>
 					</div>
 					<div class="col-xs-12 col-sm-4 text-center">
@@ -73,7 +78,7 @@
 				<div class="col-xs-12 divider text-center">
 					<div class="col-xs-12 col-sm-4 emphasis">
 						<h2>
-							<strong style="color:rgb(255,255,255)"> @insta</strong>
+							<strong style="color:rgb(255,255,255)">${instagram}</strong>
 						</h2>
 						<p>
 							<small style="color:rgb(255,255,255)">Instagram</small>
@@ -84,7 +89,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-4 emphasis">
 						<h2>
-							<strong style="color:rgb(255,255,255)">@twit</strong>
+							<strong style="color:rgb(255,255,255)">${twitter}</strong>
 						</h2>
 						<p>
 							<small style="color:rgb(255,255,255)">Twitter</small>
@@ -95,7 +100,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-4 emphasis">
 						<h2>
-							<strong style="color:rgb(255,255,255)">faceb</strong>
+							<strong style="color:rgb(255,255,255)">${facebook}</strong>
 						</h2>
 						<p>
 							<small style="color:rgb(255,255,255)">Facebook</small>
