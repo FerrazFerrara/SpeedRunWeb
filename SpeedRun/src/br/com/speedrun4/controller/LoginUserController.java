@@ -9,8 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.sun.jersey.spi.dispatch.RequestDispatcher;
-
 import br.com.speedrun1.apiservices.ServerCommunication;
 
 /**
