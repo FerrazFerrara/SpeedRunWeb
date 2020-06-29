@@ -15,12 +15,18 @@ public class SpeedRunDAO {
 	private Statement st;
 	private ResultSet rs;
 	ConnectorDAO c = new ConnectorDAO();
+	/// array de speedruns do banco
 	private ArrayList<SpeedRunBean> speedruns = new ArrayList<SpeedRunBean>();
 	
 	public SpeedRunDAO() {
 		conn = new ConnectorDAO().getConnection();
 	}
 	
+	/**
+	 * inseri nova speedrun no banco
+	 * @param speedRun: nova Speedrun a ser adicionada ao banco
+	 * @return se a operacao de adição funcinou ou nao
+	 */
 	public boolean inserirSpeedRun(SpeedRunBean speedRun) {
 		
 		String sql = "INSERT INTO speedruns (tempo, modoJogo, plataforma, dia, idUser) values (TO_DATE(?, '%i:%s:%f'),?,?,TO_DATE(?, 'DD/MM/YYYY'),?)";
@@ -43,6 +49,10 @@ public class SpeedRunDAO {
 		}
 	}
 	
+	/**
+	 * busca todas as speedruns do banco
+	 * @return arraylist de speedruns
+	 */
 	public ArrayList<SpeedRunBean> buscaSpeedruns() {
 		String sql = "SELECT * FROM speedruns";
 		
@@ -63,6 +73,10 @@ public class SpeedRunDAO {
 		}
 	}
 	
+	/**
+	 * busca as speedruns de um usuario especifico do banco
+	 * @return arraylist de speedruns
+	 */
 	public ArrayList<SpeedRunBean> buscaSpeedruns(int id) {
 		String sql = "SELECT * FROM speedruns where idUser = " + id;
 		
@@ -83,6 +97,12 @@ public class SpeedRunDAO {
 		}
 	}
 	
+	/**
+	 * atualiza uma speedrun
+	 * @param speedrun: speedrun com os dados atualizados
+	 * @param id: id da speedrun a ser atualizada
+	 * @return
+	 */
 	public boolean updateSpeedRun(SpeedRunBean speedrun, int id) {
 		String tempo = "tempo = TO_DATE('" + speedrun.getTempo() + "', '%i:%s:%f')";
 		String modoJogo = ", modoJogo = \"" + speedrun.getModoJogo() + "\"";

@@ -4,12 +4,19 @@ import br.com.speedrun.dao.UsuarioDAO;
 
 public class UsuarioBean {
 	// ============================== ATRIBUTOS ==============================
+	/// id do usuario
 	private int idUser = 0;
+	/// username no login
 	private String login;
+	/// senha
 	private String senha;
+	/// pais que o usuario pertence
 	private String pais;
+	/// link da rede social
 	private String twitter;
+	/// link da rede social
 	private String youtube;
+	/// link da rede social
 	private String instagram;
 	
 	// ============================== CONSTRUTORES ==============================
