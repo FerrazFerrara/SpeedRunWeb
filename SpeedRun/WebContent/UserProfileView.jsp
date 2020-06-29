@@ -63,7 +63,7 @@
 								alt="" class="img-circle img-responsive">
 							<figcaption class="ratings">
 								<p style="color:rgb(255,255,255)">
-									Ratings <a href="#"> <span class="fa fa-star"></span>
+									Ratings <br> <a href="#"> <span class="fa fa-star"></span>
 									</a> <a href="#"> <span class="fa fa-star"></span>
 									</a> <a href="#"> <span class="fa fa-star"></span>
 									</a> <a href="#"> <span class="fa fa-star"></span>
