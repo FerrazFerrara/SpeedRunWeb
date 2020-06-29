@@ -27,7 +27,6 @@
 	<nav id="nav">
 		<ul class="main">
 			<li><a target="_self" href="">Home</a></li>
-			<li><a target="_self" href="RankingView.jsp">Ranking</a></li>
 			<li><a target="_blank" href="SupportView.jsp">Support</a></li>
 			<li><a target="_self" href="RegisterView.jsp">Register</a></li>
 			<li><a target="_self" href="LoginView.jsp">Login</a></li>
