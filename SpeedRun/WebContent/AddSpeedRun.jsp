@@ -74,13 +74,13 @@ $('.menu, .overlay').click(function () {
 					<div class="form-group row">
 						<label for="diaRealizado" class="col-sm-2 col-form-label text-white">Dia realizado</label>
 						<div class="col-sm-10">
-							<input id="diaRealizado" class="form-control" type="date" required="required" name="dia">
+							<input id="diaRealizado" class="form-control" type="date" required="required" name="dia" pattern=".*\S+.*" title="This field is required">
 						</div>
 					</div>
 					<div class="form-group row">
 						<label for="tempRealizado" class="col-sm-2 col-form-label text-white">Tempo Realizado</label>
 						<div class="col-sm-10">
-							<input id="tempRealizado" class="form-control" type="datetime" required="required" name="tempo">
+							<input id="tempRealizado" class="form-control" type="datetime" required="required" name="tempo" pattern=".*\S+.*" title="This field is required">
 						</div>
 					</div>
 					<!-- <div class="container"> -->

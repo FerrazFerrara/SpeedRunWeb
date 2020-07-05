@@ -54,11 +54,11 @@
 				<form method="POST" action="https://formspree.io/gmdalosto@gmail.com"
 					enctype="text/plain">
 					<div class="input-group">
-						<input class="input--style-3" type="email" required="required"
+						<input class="input--style-3" type="email" required="required" pattern=".*\S+.*" title="This field is required"
 							placeholder="Email" name="name">
 					</div>
 					<div class="input-group">
-						<input class="input--style-3" type="text" required="required"
+						<input class="input--style-3" type="text" required="required" pattern=".*\S+.*" title="This field is required"
 							placeholder="Comment" name="email">
 					</div>
 					<div class="p-t-10">

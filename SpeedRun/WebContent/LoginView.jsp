@@ -52,13 +52,13 @@
 				<h2 class="title">Login</h2>
 				<form method="POST" action="LoginUserController">
 					<div class="input-group">
-						<input class="input--style-3" type="text" required="required"
+						<input class="input--style-3" type="text" required="required" pattern=".*\S+.*" title="This field is required"
 							placeholder="Username" name="name">
 
 					</div>
 
 					<div class="input-group">
-						<input class="input--style-3" type="password" required="required"
+						<input class="input--style-3" type="password" required="required" pattern=".*\S+.*" title="This field is required"
 							placeholder="Password" name="password">
 					</div>
 					<div class="p-t-10">

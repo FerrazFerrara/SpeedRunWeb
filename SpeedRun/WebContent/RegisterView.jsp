@@ -51,17 +51,17 @@
 				<h2 class="title">Registration Info</h2>
 				<form method="POST" action="RegisterUserController">
 					<div class="input-group">
-						<input class="input--style-3" type="text" required="required" placeholder="Username"
+						<input class="input--style-3" type="text" required="required" placeholder="Username" pattern=".*\S+.*" title="This field is required"
 							name="name">
 					</div>
 
 					<div class="input-group">
-						<input class="input--style-3" type="password" required="required" placeholder="Password"
+						<input class="input--style-3" type="password" required="required" placeholder="Password" pattern=".*\S+.*" title="This field is required"
 							name="email">
 					</div>
 					<div class="input-group">
 						<input class="input--style-3" type="password"
-							required="required" placeholder="Confirm Password">
+							required="required" pattern=".*\S+.*" title="This field is required" placeholder="Confirm Password">
 					</div>
 					<div class="p-t-10">
 						<button class="btn btn--pill btn--green" type="submit">Register</button>
