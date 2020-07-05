@@ -13,8 +13,11 @@ import br.com.speedrun3.bo.UsuarioBO;
 @WebServlet("/editProfileController")
 public class EditProfileController extends HttpServlet{
 
+	// Serial
 	private static final long serialVersionUID = 1L;
 	
+	// Atualiza o perfil do usuário de acordo com as alteraçoes feitas na página JSP
+	// Podendo mudar o Sobre, nome de usuário e redirecionamento das redes sociais
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String about = req.getParameter("about");

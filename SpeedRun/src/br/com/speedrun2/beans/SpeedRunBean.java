@@ -4,11 +4,17 @@ import br.com.speedrun.dao.SpeedRunDAO;
 
 public class SpeedRunBean {
 	// ============================== ATRIBUTOS ==============================
+	/// id da speedrun
 	private int idSR = 0;
+	/// id do usuario que realizou
 	private int idUser;
+	/// tempo realizado
 	private String tempo; 
+	/// modo de jogo realizado
 	private String modoJogo; 
+	/// plataforma que o jogo rodou
 	private String plataforma; 
+	/// dia realizado
 	private String dia;
 	
 	// ============================== CONSTRUTORES ==============================

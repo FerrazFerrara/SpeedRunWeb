@@ -31,7 +31,6 @@
 <nav id="nav">
 		<ul class="main">
 		<li><a target="_self" href="">Home</a></li>
-		<li><a target="_self" href="RankingView.jsp">Ranking</a></li>
 		<li><a target="_blank" href="SupportView.jsp">Support</a></li>
 		<li><a target="_self" href="RegisterView.jsp">Register</a></li>
 		<li><a target="_self" href="LoginView.jsp">Login</a></li>
@@ -64,7 +63,7 @@
 								alt="" class="img-circle img-responsive">
 							<figcaption class="ratings">
 								<p style="color:rgb(255,255,255)">
-									Ratings <a href="#"> <span class="fa fa-star"></span>
+									Ratings <br> <a href="#"> <span class="fa fa-star"></span>
 									</a> <a href="#"> <span class="fa fa-star"></span>
 									</a> <a href="#"> <span class="fa fa-star"></span>
 									</a> <a href="#"> <span class="fa fa-star"></span>

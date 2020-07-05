@@ -15,9 +15,13 @@ import br.com.speedrun3.bo.SpeedRunBO;
 
 @WebServlet("/addSpeedRun")
 public class AddSpeedRunController extends HttpServlet{
-
+	
+	//Serial
 	private static final long serialVersionUID = 1L;
 	
+	// Funcão para adicionar speedrun de acordo com os dados inseridos na tela JSP, tem como parametro
+	// o modo de jogo, plataforma, dia e tempo, criando uma conexao com banco de dados e entao inserindo
+	// a speedrun no banco de dados local
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String modoJogo = req.getParameter("modoJogo");

@@ -13,13 +13,18 @@ public class UsuarioDAO {
 	private PreparedStatement prep;
 	private Statement st;
 	private ResultSet rs;
-	
+	/// arraylist de usuarios no banco
 	private ArrayList<UsuarioBean> usuarios = new ArrayList<UsuarioBean>();
 	
 	public UsuarioDAO() {
 		conn = new ConnectorDAO().getConnection();
 	}
 	
+	/**
+	 * inserir um novo usuario no banco
+	 * @param usuario: novo usuario a ser inserido
+	 * @return se a operacao de inserção deu certo ou nao
+	 */
 	public boolean inserirUsuario(UsuarioBean usuario) {
 		String sql = "INSERT INTO usuario (login, senha, pais, twitter, youtube, instagram) values (?,?,?,?,?,?)";
 		
@@ -42,6 +47,10 @@ public class UsuarioDAO {
 		}
 	}
 	
+	/**
+	 * recupera todos os usuarios do banco
+	 * @return arraylist de todos os usuarios do banco
+	 */
 	public ArrayList<UsuarioBean> buscaUsuarios() {
 		String sql = "SELECT * FROM usuario";
 		
@@ -60,6 +69,12 @@ public class UsuarioDAO {
 		}
 	}
 	
+	/**
+	 * atualiza os dados de um usuario especifico
+	 * @param usuario: novos dados do usuario
+	 * @param id: id do usuario que deseja atualizar os dados
+	 * @return se a operacao de inserção deu certo ou nao 
+	 */
 	public boolean updateUsuario(UsuarioBean usuario, int id) {
 		String instagram = "instagram = \"" + usuario.getInstagram() + "\"";
 		String twitter = ", twitter = \"" + usuario.getTwitter() + "\"";
@@ -77,6 +92,11 @@ public class UsuarioDAO {
 		}
 	}
 	
+	/**
+	 * deleta um usuario especifico do banco
+	 * @param usuario: usuario a ser deletado
+	 * @return se a operacao de inserção deu certo ou nao
+	 */
 	public boolean deleteUsuario(UsuarioBean usuario) {
 		String sql = "DELETE FROM usuario WHERE id_carro = " + usuario.getIdUser();
 		
