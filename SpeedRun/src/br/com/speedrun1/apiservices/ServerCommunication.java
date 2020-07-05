@@ -19,6 +19,8 @@ public class ServerCommunication {
 	// (Passível a mudança)
 	private static final String POST_URL = "http://speedsouls.herokuapp.com/usuario";
 
+	// Envia ao servidor em nuvem determinado username e password para verificar existencia no banco de dados
+	// retornando um booleano com a confirmaçao de determinado usuário, true se existir e false se não existir
 	 public boolean sendLoginGetter(String username,String password) throws IOException {
 		URL obj = new URL(GET_URL + "/" + username + "/" + password);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -49,7 +51,10 @@ public class ServerCommunication {
 		}
 
 	}
-
+	 
+	 // Envia ao servidor uma conta com dados do username e password, cadastrando assim no serviço
+	 // em nuvem, métodos de verificação inclusos no server-side.
+	 // Utiliza JSONObject para escrever on OutputStream e assim fazer a comuninicação com o servidor.
 	 public void sendPOST(String username,String password) throws IOException {
 		URL obj = new URL(POST_URL);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
