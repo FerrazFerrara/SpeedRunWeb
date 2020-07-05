@@ -41,6 +41,10 @@ public class LoginUserController extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
+	
+	// Pega os dados de login do usuário e verifica no banco de dados em nuvem ContactSV para ver se
+	// existe no banco de dados, se não existir ele dispara um alerta falando do erro e recarrega a 
+	// página
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub

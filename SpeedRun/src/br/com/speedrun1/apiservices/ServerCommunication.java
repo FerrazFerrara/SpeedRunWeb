@@ -47,7 +47,7 @@ public class ServerCommunication {
 
 	}
 
-	 public void sendPOST() throws IOException {
+	 public void sendPOST(String username,String password) throws IOException {
 		URL obj = new URL(POST_URL);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 		con.setRequestMethod("POST");
@@ -55,8 +55,8 @@ public class ServerCommunication {
 
 		// For POST only - START
 		JSONObject account = new JSONObject();
-		account.put("name","gui");
-		account.put("password","123");
+		account.put("name",username);
+		account.put("password",password);
 		con.setDoOutput(true);
 		OutputStreamWriter os = new OutputStreamWriter(con.getOutputStream());
 		os.write(account.toString());
