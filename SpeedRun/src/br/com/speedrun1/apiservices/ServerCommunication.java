@@ -9,11 +9,14 @@ import java.net.URL;
 import org.json.simple.JSONObject;
 
 public class ServerCommunication {
-
+	// Atributo Mock para setar propety do userAgent
 	private static final String USER_AGENT = "Mozilla/5.0";
 
+	// URL para GET do usuário para pegar os dados ou verificar determinado usuário. 
 	private static final String GET_URL = "http://speedsouls.herokuapp.com/usuario";
 
+	// URL para Post do usuário, para enviar dado no login para cadastramento.
+	// (Passível a mudança)
 	private static final String POST_URL = "http://speedsouls.herokuapp.com/usuario";
 
 	 public boolean sendLoginGetter(String username,String password) throws IOException {

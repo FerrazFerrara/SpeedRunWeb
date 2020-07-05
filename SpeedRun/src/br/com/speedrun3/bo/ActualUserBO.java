@@ -8,11 +8,14 @@ import br.com.speedrun2.beans.UsuarioBean;
  *
  */
 public class ActualUserBO {
+	// Atributos
 	private static UsuarioBean shared;
 	
+	// Construtores
 	private ActualUserBO() {
 	}
 	
+	// Métodos
 	public static UsuarioBean getActualUser() {
 		return shared;
 	}
