@@ -44,7 +44,7 @@ $('.menu, .overlay').click(function () {
 				<h2 class="title">Speed Runs</h2>
 					
 					<div>
-						<form action="speedRunsController" method="post">
+						<form action="speedRunsController" method="POST">
 							<c:forEach items = "${speedRuns}" var="speedrun">
 								<div class="card" style="width: 30rem;">
 									<div class="card-body">
@@ -60,7 +60,7 @@ $('.menu, .overlay').click(function () {
 					</div>
 					
 					<div>
-						<form action="speedRunsController" method="get">
+						<form action="speedRunsController" method="GET">
 							<button class="btn btn--pill btn--green" type="submit">Buscar Speed Runs</button>
 						</form>
 					</div>
